@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter";
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 20px;
+}
+
+.logo {
+  max-width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.entrada-texto {
+  flex: 2;
+  padding: 50px;
+}
+
+.textarea {
+  width: 90%;
+  height: 300px;
+  font-family: "Inter";
+  font-size: 32px;
+  font-weight: 400;
+  border: none;
+  background: #f3f5fc;
+  margin: 0 0 0 70px;
+  resize: vertical;
+  color: #0a3871;
+}
+
+.textarea::placeholder {
+  color: #0a3871;
+}
+
+.textarea:focus {
+  outline: none;
+}
+
+.informacion {
+  width: 229px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  margin: 60px 0 40px 90px;
+}
+
+.informacion i {
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.informacion h6 {
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+}
+
+.botones {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 80px;
+  gap: 24px;
+}
+
+.botones .encriptar {
+  width: 328px;
+  height: 67px;
+  padding: 24px;
+  border-radius: 24px;
+  border: none;
+  gap: 8px;
+  background-color: #0a3871;
+  color: #ffffff;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.botones .encriptar:hover {
+  background-color: #072b61;
+}
+
+.botones .desencriptar {
+  width: 328px;
+  height: 67px;
+  padding: 24px;
+  border-radius: 24px;
+  border: 1px solid #0a3871;
+  gap: 8px;
+  color: #0a3871;
+  background-color: #d8dfe8;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.botones .desencriptar:hover {
+  background-color: #eff1fa;
+}
+
+.mensaje-texto {
+  flex: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: calc(90% - 40px);
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url(./assets/Muñeco.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  border-radius: 20px;
+}
+
+.mensaje {
+  display: none;
+  width: 80%;
+  height: 100px;
+  margin-bottom: 300px;
+  color: #0a3871;
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  border: none;
+  background: #f3f5fc;
+  padding: 10px;
+  resize: vertical;
+}
+.mensaje:focus {
+  outline: none;
+}
+
+.mensaje-info {
+  width: 336px;
+  text-align: center;
+}
+
+.mensaje-info h3 {
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  color: #343a40;
+}
+
+.mensaje-info p {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.copiar {
+  display: none;
+  width: 328px;
+  height: 67px;
+  padding: 24px;
+  border-radius: 24px;
+  border: 1px solid #0a3871;
+  gap: 8px;
+  color: #0a3871;
+  background-color: #d8dfe8;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+  transition: all 1s;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.copiar:hover {
+  background-color: #eff1fa;
+}
+
+footer {
+  color: #0a3871;
+  font-weight: 400;
+  padding: 5px 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+@media (max-width: 1024px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .entrada-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+  }
+
+  .textarea {
+    margin-left: 0px;
+  }
+
+  .informacion {
+    margin-left: 10px;
+  }
+
+  .botones {
+    margin: 0 auto;
+  }
+
+  .mensaje-texto {
+    background-image: none;
+    width: 688px;
+    height: 133px;
+    justify-content: center;
+    margin: 10px;
+  }
+
+  .mensaje {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0px;
+    padding-top: 20px;
+  }
+
+  .logo {
+    width: 100px;
+    height: auto;
+    top: 73.42px;
+    left: 40px;
+  }
+
+  .entrada-texto {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .textarea {
+    height: 300px;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 375px) {
+  .entrada-texto {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .textarea {
+    width: 90%;
+    height: 200px;
+    font-size: 32px;
+  }
+
+  .informacion {
+    width: 100%;
+    margin: 0 30px 40px 0;
+
+    padding-bottom: 15px;
+  }
+
+  .informacion h6 {
+    font-size: 16px;
+  }
+
+  .botones {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    gap: 10px;
+  }
+
+  .botones .encriptar,
+  .botones .desencriptar {
+    width: 343px;
+    height: auto;
+    font-size: 22px;
+    padding: 24px;
+    border-radius: 24px;
+    gap: 8px;
+  }
+
+  .mensaje-texto {
+    width: 334px;
+    min-height: 122px;
+  }
+
+  .mensaje {
+    margin-bottom: 0px;
+    min-height: 40px;
+  }
+
+  .mensaje-info {
+    width: 263px;
+  }
+
+  .mensaje-info h3 {
+    height: 55px;
+  }
+
+  .mensaje-info p {
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .copiar {
+    margin-bottom: 5px;
+    font-size: 22px;
+  }
+}

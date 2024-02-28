@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Encriptador de Texto</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="./assets/Logo.png" alt="Logo Alura">
+    </header>
+
+    <main>
+        <section class="entrada-texto">
+            <textarea class="textarea" id="" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="informacion">
+                <h6><i class="bi bi-exclamation-circle-fill"></i>Solo letras minúsculas y sin
+                    acentos</p>
+                </h6>
+            </div>
+            <div class="botones">
+                <button class="encriptar">Encriptar</button>
+                <button class="desencriptar">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="mensaje-texto">
+            <textarea class="mensaje" id="" cols="20" rows="10"></textarea>
+            <div class="mensaje-info">
+                <h3>Ningún mensaje fue encontrado</h3>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div>
+                <button class="copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">&copy; 2024 | Amelia Mabel Díaz </p>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
