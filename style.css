@@ -35,7 +35,7 @@ main {
 }
 
 .entrada-texto {
-  flex: 2;
+  margin-right: 200px;
   padding: 50px;
 }
 
@@ -220,6 +220,12 @@ footer {
   padding: 5px 20px;
   text-align: center;
   margin-top: auto;
+}
+
+@media (max-width: 1440px) {
+  .entrada-texto {
+    margin-right: 50px;
+  }
 }
 
 @media (max-width: 1024px) {
