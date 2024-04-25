@@ -27,6 +27,7 @@ header {
 }
 
 main {
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -170,6 +171,9 @@ main {
 .mensaje-info {
   width: 336px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .mensaje-info h3 {
@@ -188,7 +192,7 @@ main {
 
 .copiar {
   display: none;
-  width: 328px;
+  width: 228px;
   height: 67px;
   padding: 24px;
   border-radius: 24px;
@@ -222,7 +226,7 @@ footer {
   main {
     flex-direction: column;
     align-items: center;
-    margin: 10px;
+    margin: 0px;
   }
 
   .entrada-texto {
@@ -242,12 +246,21 @@ footer {
 
   .botones {
     margin: 0 auto;
+    justify-content: center;
+  }
+
+  .botones .encriptar {
+    width: 300px;
+  }
+
+  .botones .desencriptar {
+    width: 300px;
   }
 
   .mensaje-texto {
     background-image: none;
-    width: 688px;
-    height: 133px;
+    width: 600px;
+    height: 180px;
     justify-content: center;
     margin: 10px;
   }
@@ -271,13 +284,30 @@ footer {
   }
 
   .entrada-texto {
-    width: 100%;
+    width: 80%;
     padding: 25px;
   }
 
   .textarea {
     height: 300px;
     margin-left: 0px;
+  }
+
+  .informacion {
+    width: 250px;
+    height: 10px;
+  }
+
+  .botones {
+    margin-left: 15px;
+  }
+
+  .botones .encriptar {
+    width: 280px;
+  }
+
+  .botones .desencriptar {
+    width: 280px;
   }
 }
 
@@ -295,13 +325,14 @@ footer {
 
   .informacion {
     width: 100%;
-    margin: 0 30px 40px 0;
-
-    padding-bottom: 15px;
+    margin: 0px;
+    padding-bottom: 20px;
+    justify-content: flex-start;
   }
 
   .informacion h6 {
     font-size: 16px;
+    margin: 0px;
   }
 
   .botones {
