@@ -2,6 +2,7 @@
 
 html {
   color: #0a3871;
+  background: #f3f5fc;
 }
 
 body {
@@ -46,6 +47,7 @@ main {
   font-size: 28px;
   font-weight: 400;
   border: none;
+  background: #f3f5fc;
   margin: 0 0 0 70px;
   resize: vertical;
   color: #0a3871;
@@ -312,9 +314,8 @@ footer {
 
 @media (max-width: 375px) {
   .logo {
-    width: 15%;
+    width: 20%;
   }
-
   .entrada-texto {
     padding: 10px;
   }
