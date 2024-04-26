@@ -30,12 +30,12 @@ main {
   width: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: center;
+
   margin: 20px;
 }
 
 .entrada-texto {
-  margin-right: 200px;
   padding: 50px;
 }
 
@@ -49,7 +49,7 @@ main {
   background: #f3f5fc;
   margin: 0 0 0 70px;
   resize: vertical;
-  /* color: #0a3871; */
+  color: #0a3871;
 }
 
 .textarea::placeholder {
@@ -222,12 +222,6 @@ footer {
   margin-top: auto;
 }
 
-@media (max-width: 1440px) {
-  .entrada-texto {
-    margin-right: 50px;
-  }
-}
-
 @media (max-width: 1024px) {
   main {
     flex-direction: column;
@@ -319,14 +313,13 @@ footer {
 
 @media (max-width: 375px) {
   .entrada-texto {
-    width: 100%;
     padding: 10px;
   }
 
   .textarea {
     width: 90%;
     height: 200px;
-    font-size: 32px;
+    font-size: 25px;
   }
 
   .informacion {
@@ -337,7 +330,7 @@ footer {
   }
 
   .informacion h6 {
-    font-size: 16px;
+    font-size: 14px;
     margin: 0px;
   }
 
@@ -351,22 +344,23 @@ footer {
 
   .botones .encriptar,
   .botones .desencriptar {
-    width: 343px;
+    width: 300px;
     height: auto;
-    font-size: 22px;
+    font-size: 18px;
     padding: 24px;
     border-radius: 24px;
     gap: 8px;
   }
 
   .mensaje-texto {
-    width: 334px;
+    width: 300px;
     min-height: 122px;
   }
 
   .mensaje {
     margin-bottom: 0px;
     min-height: 40px;
+    font-size: 18px;
   }
 
   .mensaje-info {
@@ -385,7 +379,12 @@ footer {
   }
 
   .copiar {
-    margin-bottom: 5px;
-    font-size: 22px;
+    margin: 20px 0px 5px 0px;
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  footer {
+    margin: 0px;
   }
 }
